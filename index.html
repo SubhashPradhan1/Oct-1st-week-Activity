@@ -1,349 +1,194 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CampusConnect student service portal">
-    <title>CampusConnect - Student Service Portal</title>
+    <title>CampusConnect | Student Support Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container nav-container">
-            <a class="brand" href="#home">
-                <span class="brand-mark">CC</span>
-                <span>CampusConnect</span>
-            </a>
 
-            <nav class="main-nav" aria-label="Main navigation">
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#report">Report Issue</a>
-                <a href="#complaints">Complaints</a>
-            </nav>
+    <header class="header">
+        <div class="logo">CampusConnect</div>
 
-            <button class="menu-button" type="button" aria-label="Open menu">☰</button>
-        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#complaints">Complaints</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#submit" class="nav-button">Get Support</a>
     </header>
+
     <main>
-        <section id="home" class="hero-section">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <span class="eyebrow">STUDENT SUPPORT PORTAL</span>
-                    <h1>One place to report and track campus issues.</h1>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">STUDENT SUPPORT PORTAL</span>
+
+                <h1>Your Campus.<br>
+                    Your Voice.<br>
+                    <span>Your Solution.</span>
+                </h1>
+
+                <p>
+                    A simple platform to share your problems,
+                    submit complaints, and get the support
+                    you need in your campus.
+                </p>
+
+                <a href="#submit" class="primary-button">
+                    Submit a Complaint →
+                </a>
+            </div>
+
+            <div class="hero-card">
+                <div class="card-icon">🎓</div>
+                <h2>Student Help Center</h2>
+                <p>We are here to help you.</p>
+
+                <div class="support-item">
+                    <span>📚 Academic Support</span>
+                    <span>→</span>
+                </div>
+
+                <div class="support-item">
+                    <span>🏫 Campus Facilities</span>
+                    <span>→</span>
+                </div>
+
+                <div class="support-item">
+                    <span>💬 General Complaints</span>
+                    <span>→</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="section-heading">
+                <span class="tag">HOW WE HELP</span>
+                <h2>Support for Every Student</h2>
+                <p>Find help for common campus problems.</p>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="service-icon">📖</div>
+                    <h3>Academic Issues</h3>
                     <p>
-                        CampusConnect helps students report problems related to
-                        internet, classrooms, devices, electricity and other
-                        campus services.
+                        Get help with classes, exams,
+                        assignments, and academic concerns.
                     </p>
-                    <div class="hero-actions">
-                        <a class="button button-primary" href="#report">Report an Issue</a>
-                        <a class="button button-secondary" href="#complaints">Track Complaints</a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <strong>128</strong>
-                            <span>Issues Reported</span>
-                        </div>
-                        <div class="stat">
-                            <strong>96</strong>
-                            <span>Resolved</span>
-                        </div>
-                        <div class="stat">
-                            <strong>24h</strong>
-                            <span>Avg. Response</span>
-                        </div>
-                    </div>
-                </div>
+                </article>
 
-                <div class="hero-card">
-                    <div class="card-header">
-                        <div>
-                            <span class="small-label">CURRENT STATUS</span>
-                            <h2>Campus Services</h2>
-                        </div>
-                        <span class="status-dot online">Operational</span>
-                    </div>
-
-                    <div class="service-status">
-                        <div class="status-row">
-                            <span>Internet</span>
-                            <span class="status-pill status-good">Operational</span>
-                        </div>
-                        <div class="status-row">
-                            <span>Computer Lab</span>
-                            <span class="status-pill status-warning">Partial Issue</span>
-                        </div>
-                        <div class="status-row">
-                            <span>Classrooms</span>
-                            <span class="status-pill status-good">Operational</span>
-                        </div>
-                        <div class="status-row">
-                            <span>Electricity</span>
-                            <span class="status-pill status-good">Operational</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <div>
-                        <span class="eyebrow">CAMPUS SERVICES</span>
-                        <h2>What can you report?</h2>
-                    </div>
-                    <p>Select the category that best matches your issue.</p>
-                </div>
-
-                <div class="service-grid">
-                    <article class="service-card">
-                        <div class="service-icon">💻</div>
-                        <h3>Laptop Support</h3>
-                        <p>Report charging, keyboard, display and hardware issues.</p>
-                        <a href="#report">Report issue →</a>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">🌐</div>
-                        <h3>Internet</h3>
-                        <p>Report Wi-Fi, network speed or connectivity problems.</p>
-                        <a href="#report">Report issue →</a>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">🏫</div>
-                        <h3>Classroom</h3>
-                        <p>Report projector, fan, seating or classroom equipment issues.</p>
-                        <a href="#report">Report issue →</a>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">⚡</div>
-                        <h3>Electricity</h3>
-                        <p>Report power, charging point or electrical problems.</p>
-                        <a href="#report">Report issue →</a>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">🚰</div>
-                        <h3>Water & Facilities</h3>
-                        <p>Report water, sanitation and common-area facility issues.</p>
-                        <a href="#report">Report issue →</a>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">🔐</div>
-                        <h3>Account Support</h3>
-                        <p>Report login, password or student portal account issues.</p>
-                        <a href="#report">Report issue →</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="report" class="section section-soft">
-            <div class="container form-layout">
-                <div class="form-intro">
-                    <span class="eyebrow">NEW COMPLAINT</span>
-                    <h2>Tell us what went wrong.</h2>
+                <article class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Campus Facilities</h3>
                     <p>
-                        Provide enough information for the support team to understand
-                        the problem and respond quickly.
+                        Report issues related to classrooms,
+                        hostels, water, and electricity.
                     </p>
+                </article>
 
-                    <div class="instruction-box">
-                        <strong>Before submitting</strong>
-                        <ul>
-                            <li>Choose the correct category.</li>
-                            <li>Use a clear issue title.</li>
-                            <li>Describe where the problem happened.</li>
-                            <li>Select the correct priority.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <form class="complaint-form" id="complaintForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="studentName">Student Name</label>
-                            <input id="studentName" name="studentName" type="text"
-                                   placeholder="Enter your name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="studentId">Student ID</label>
-                            <input id="studentId" name="studentId" type="text"
-                                   placeholder="e.g. CC-1024" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="category">Issue Category</label>
-                            <select id="category" name="category" required>
-                                <option value="">Select category</option>
-                                <option value="Laptop">Laptop Support</option>
-                                <option value="Internet">Internet</option>
-                                <option value="Classroom">Classroom</option>
-                                <option value="Electricity">Electricity</option>
-                                <option value="Facilities">Water & Facilities</option>
-                                <option value="Account">Account Support</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="priority">Priority</label>
-                            <select id="priority" name="priority" required>
-                                <option value="">Select priority</option>
-                                <option value="Low">Low</option>
-                                <option value="Medium">Medium</option>
-                                <option value="High">High</option>
-                                <option value="Critical">Critical</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="title">Issue Title</label>
-                        <input id="title" name="title" type="text"
-                               placeholder="Example: Wi-Fi not working in Lab 2" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="location">Location</label>
-                        <input id="location" name="location" type="text"
-                               placeholder="Example: Computer Lab 2" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="description">Description</label><br>
-                        <textarea id="description" name="description" rows="6"
-                                  placeholder="Explain what happened..." required></textarea>
-                    </div>
-
-                    <div class="form-check">
-                        <input id="confirm" type="checkbox" required>
-                        <label for="confirm">I have provided accurate information.</label>
-                    </div>
-
-                    <button class="button button-primary button-full" type="submit">
-                        Submit Complaint
-                    </button>
-                </form>
+                <article class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Student Assistance</h3>
+                    <p>
+                        Share your concerns and find the
+                        right support for your needs.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <section id="complaints" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <div>
-                        <span class="eyebrow">TRACKING</span>
-                        <h2>Recent complaints</h2>
-                    </div>
-                    <span class="summary-label">Showing 6 sample complaints</span>
-                </div>
-
-                <div class="complaint-table-wrapper">
-                    <table class="complaint-table">
-                        <thead>
-                            <tr>
-                                <th>Issue</th>
-                                <th>Category</th>
-                                <th>Priority</th>
-                                <th>Status</th>
-                                <th>Location</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Wi-Fi not working</strong>
-                                    <span>CC-1024</span>
-                                </td>
-                                <td>Internet</td>
-                                <td><span class="priority high">High</span></td>
-                                <td><span class="status-pill status-pending">Pending</span></td>
-                                <td>Lab 2</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Laptop not charging</strong>
-                                    <span>CC-1048</span>
-                                </td>
-                                <td>Laptop</td>
-                                <td><span class="priority critical">Critical</span></td>
-                                <td><span class="status-pill status-progress">In Progress</span></td>
-                                <td>Lab 1</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Projector not displaying</strong>
-                                    <span>CC-1092</span>
-                                </td>
-                                <td>Classroom</td>
-                                <td><span class="priority medium">Medium</span></td>
-                                <td><span class="status-pill status-resolved">Resolved</span></td>
-                                <td>Room 204</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Fan making noise</strong>
-                                    <span>CC-1101</span>
-                                </td>
-                                <td>Classroom</td>
-                                <td><span class="priority low">Low</span></td>
-                                <td><span class="status-pill status-pending">Pending</span></td>
-                                <td>Room 108</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Charging point damaged</strong>
-                                    <span>CC-1112</span>
-                                </td>
-                                <td>Electricity</td>
-                                <td><span class="priority high">High</span></td>
-                                <td><span class="status-pill status-progress">In Progress</span></td>
-                                <td>Study Hall</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Portal password issue</strong>
-                                    <span>CC-1125</span>
-                                </td>
-                                <td>Account</td>
-                                <td><span class="priority medium">Medium</span></td>
-                                <td><span class="status-pill status-resolved">Resolved</span></td>
-                                <td>Online</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <section class="complaints" id="complaints">
+            <div class="section-heading">
+                <span class="tag">COMPLAINT CENTER</span>
+                <h2>Recent Complaints</h2>
+                <p>Example complaints submitted by students.</p>
             </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Complaint ID</th>
+                            <th>Category</th>
+                            <th>Issue</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#CC101</td>
+                            <td>Facilities</td>
+                            <td>Classroom fan not working</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#CC102</td>
+                            <td>Academic</td>
+                            <td>Exam schedule clarification</td>
+                            <td><span class="status progress">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#CC103</td>
+                            <td>Hostel</td>
+                            <td>Water supply issue</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="submit-section" id="submit">
+            <div class="form-info">
+                <span class="tag">WE ARE LISTENING</span>
+                <h2>Tell Us What's Wrong</h2>
+                <p>
+                    Fill in the form to share your concern
+                    with the campus support team.
+                </p>
+            </div>
+
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="category">Complaint Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="academic">Academic</option>
+                    <option value="facilities">Campus Facilities</option>
+                    <option value="hostel">Hostel</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Describe Your Problem</label>
+                <textarea id="message" name="message" rows="5"
+                          placeholder="Write your complaint here..."
+                          required></textarea>
+
+                <button type="submit">Submit Complaint →</button>
+            </form>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <h3>CampusConnect</h3>
-                <p>A student-first campus issue reporting platform.</p>
-            </div>
-            <div>
-                <strong>Support</strong>
-                <a href="#report">Report an issue</a>
-                <a href="#complaints">Track complaint</a>
-            </div>
-            <div>
-                <strong>Contact</strong>
-                <span>support@campusconnect.local</span>
-                <span>Mon – Fri, 9 AM – 6 PM</span>
-            </div>
-        </div>
-        <div class="container copyright">
-            © 2026 CampusConnect. Internal learning project.
-        </div>
+    <footer id="contact">
+        <h2>CampusConnect</h2>
+        <p>Making campus life better, one solution at a time.</p>
+        <p class="copyright">© 2026 CampusConnect. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
